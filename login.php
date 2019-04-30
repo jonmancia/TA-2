@@ -1,3 +1,6 @@
+<?php
+$currentPage = 'login';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

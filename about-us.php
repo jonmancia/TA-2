@@ -1,3 +1,6 @@
+<?php
+$currentPage = 'about-us';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +19,9 @@
       <div class="col">
         <h1>PHP Hackz</h1>
         <blockquote class="blockquote">
-  <p class="mb-0">Learning PHP is fun when you know how to hack PHP.</p>
-  <footer class="blockquote-footer">Kenneth<cite title="Source Title"></cite></footer>
+  <p class="mb-0">Learning PHP is fun when you know how to hack PHP. Apply to our night classes today!</p>
+  <button type="button" class="btn btn-primary">Apply</button>
+  
 </blockquote>
       </div>
     </div>
