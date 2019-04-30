@@ -8,19 +8,9 @@
   <title>PHP Hackz Login</title>
 </head>
 <body>
-<header>
-    <ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link" href="home.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="about-us.php">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="login.php">Login</a>
-  </li>
-</ul>
-  </header>
+  <?php
+    include('header.php');
+  ?>
 <div class="container">
     <div class="d-flex justify-content-center" style="margin-top: 350px;">
     <button type="button" class="btn btn-primary">Admin Login</button>

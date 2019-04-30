@@ -11,19 +11,9 @@
   </style>
 </head>
 <body>
-<header>
-    <ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link" href="home.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="about-us.php">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="login.php">Login</a>
-  </li>
-</ul>
-  </header>
+  <?php
+    include('header.php');
+  ?>
   <div class="jumbotron">
      <h1 class="display-4">Welcome, User!</h1>
      <p class="lead">The most amazing app you've ever seen</p>
