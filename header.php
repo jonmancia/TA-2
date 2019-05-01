@@ -13,7 +13,7 @@
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link <?php if($currentPage == 'login') echo 'bg-danger'; ?>" href="login.php">Login</a>
+        <a class="nav-link <?php if($currentPage == 'login') echo 'b-danger'; ?>" href="login.php"><?php if (!isset($_SESSION["user"])) {echo "Login";} else { echo "Logout";}?></a>
       </li>
     </ul>
   </div>

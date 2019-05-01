@@ -1,5 +1,17 @@
 <?php
+session_start();
 $currentPage = 'login';
+if (isset($_REQUEST["user"])) {
+  $user = $_REQUEST["user"];
+  if ($user == "none") {
+    session_unset();
+    session_destroy();
+    header("Location: home.php");
+  } else {
+    $_SESSION["user"] = $user;
+    header("Location: home.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +26,14 @@ $currentPage = 'login';
   <?php
     include('header.php');
   ?>
-<div class="container">
-    <div class="d-flex justify-content-center" style="margin-top: 350px;">
-    <button type="button" class="btn btn-primary">Admin Login</button>
-    <button type="button" class="btn btn-primary">Tester Login</button>
-    </div>
-    </div>
-  
-  </div>
+  <?php
+  if (!isset($_SESSION["user"])) {
+    echo "<div class=\"container\"><div class=\"d-flex justify-content-center\" style=\"margin-top: 350px;\"><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=admin\" class=\"text-white\">Admin Login</a></button><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=tester\" class=\"text-white\">Tester Login</a></button></div></div>";
+  }
+  else {
+   echo "<div class=\"container\"><h1>Click below to logout:</h1><a href=\"?user=none\" class=\"button\">Logout</a>
+   </div>";
+  }
+?>
 </body>
 </html>
