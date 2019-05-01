@@ -28,7 +28,7 @@ if (isset($_REQUEST["user"])) {
   ?>
   <?php
   if (!isset($_SESSION["user"])) {
-    echo "<div class=\"container\"><div class=\"d-flex justify-content-center\" style=\"margin-top: 350px;\"><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=admin\" class=\"text-white\">Admin Login</a></button><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=tester\" class=\"text-white\">Tester Login</a></button></div></div>";
+    echo "<div class=\"container\"><div class=\"d-flex justify-content-center\" style=\"margin-top: 350px;\"><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=Admin\" class=\"text-white\">Admin Login</a></button><button type=\"button\" class=\"btn btn-primary\"><a href=\"?user=Tester\" class=\"text-white\">Tester Login</a></button></div></div>";
   }
   else {
    echo "<div class=\"container\"><h1>Click below to logout:</h1><a href=\"?user=none\" class=\"button\">Logout</a>
